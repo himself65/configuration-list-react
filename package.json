@@ -44,8 +44,10 @@
     "jest": "^24.9.0",
     "jest-environment-jsdom-fourteen": "^1.0.1",
     "jest-watch-typeahead": "^0.4.2",
+    "less": "^3.10.3",
     "react-app-polyfill": "^1.0.5",
     "rollup": "^1.29.0",
+    "rollup-plugin-less": "^1.1.2",
     "ts-jest": "^24.3.0"
   },
   "dependencies": {

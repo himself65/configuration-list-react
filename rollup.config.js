@@ -1,5 +1,7 @@
+import { writeFileSync } from 'fs'
 import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
+import less from 'rollup-plugin-less'
 
 const PROD = process.env.NODE_ENV === 'production'
 
@@ -21,6 +23,7 @@ export default {
   },
   plugins: [
     resolve(),
+    less(),
     typescript({
       tsconfig: 'tsconfig.json'
     })
