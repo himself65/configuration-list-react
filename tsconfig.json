@@ -10,6 +10,9 @@
     "paths": {
       "~": [
         "."
+      ],
+      "~type": [
+        "../types/index.d.ts"
       ]
     },
     "allowJs": true,

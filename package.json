@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "main": "lib/index.js",
   "module": "es/index.js",
+  "types": "types/index.d.ts",
   "author": "himself65",
   "license": "MIT",
   "private": false,
