@@ -12,12 +12,17 @@
     "url": "git@github.com:Himself65/configure-list-react.git"
   },
   "scripts": {
-    "dev": "cross-env NDOE_ENV=development rollup -c",
+    "dev": "concurrently -k \" yarn dev:test \" \" yarn dev:module \"",
+    "dev:test": "parcel dev/index.html",
+    "dev:module": "cross-env NDOE_ENV=development rollup -c --watch",
     "build": "cross-env NDOE_ENV=production rollup -c",
     "lint": "yarn lint:eslint",
     "lint:fix": "yarn lint:eslint --fix",
     "lint:eslint": "eslint --ext .jsx,.js,.ts,.tsx src",
     "test": "jest -i"
+  },
+  "alias": {
+    "configure-list-react": "es/index.js"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^7.0.0",
@@ -29,6 +34,7 @@
     "@types/react-dom": "^16.9.4",
     "@typescript-eslint/eslint-plugin": "^2.16.0",
     "@typescript-eslint/parser": "^2.16.0",
+    "concurrently": "^5.0.2",
     "cross-env": "^6.0.3",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
@@ -46,12 +52,14 @@
     "jest-environment-jsdom-fourteen": "^1.0.1",
     "jest-watch-typeahead": "^0.4.2",
     "less": "^3.10.3",
+    "parcel": "^1.12.4",
     "react-app-polyfill": "^1.0.5",
     "rollup": "^1.29.0",
     "rollup-plugin-less": "^1.1.2",
     "ts-jest": "^24.3.0"
   },
   "dependencies": {
+    "es": "^0.7.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "typescript": "^3.7.4"

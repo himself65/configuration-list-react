@@ -1,0 +1,8 @@
+node_modules
+.github
+config
+dev
+test
+rollup.config.js
+tsconfig.dev.json
+yarn.lock

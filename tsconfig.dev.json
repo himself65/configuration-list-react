@@ -6,7 +6,8 @@
   "include": [
     "./",
     "../config",
-    "../test"
+    "../test",
+    "../dev"
   ],
   "exclude": [
     "../node_modules"
