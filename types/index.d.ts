@@ -5,3 +5,7 @@ export type Configuration = {
     value: string[] | string
   }[]
 }[]
+
+export type ConfigurationListProps = {
+
+}
