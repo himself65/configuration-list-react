@@ -1,11 +1,13 @@
+export type ConfigurationItem = {
+  name: string
+  value: ConfigurationItem
+}[] | string[] | string
+
 export type Configuration = {
-  name: string,
-  items: {
-    name: string
-    value: string[] | string
-  }[]
-}[]
+  name: string
+  value: ConfigurationItem
+}
 
 export type ConfigurationListProps = {
-
+  list: Configuration
 }

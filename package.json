@@ -21,9 +21,6 @@
     "lint:eslint": "eslint --ext .jsx,.js,.ts,.tsx src",
     "test": "jest -i"
   },
-  "alias": {
-    "configuration-list-react": "es/index.js"
-  },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^7.0.0",
     "@rollup/plugin-typescript": "^2.1.0",
