@@ -22,7 +22,7 @@
     "test": "jest -i"
   },
   "alias": {
-    "configure-list-react": "es/index.js"
+    "configuration-list-react": "es/index.js"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^7.0.0",

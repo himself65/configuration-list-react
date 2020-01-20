@@ -4,12 +4,12 @@ import { ConfigurationListProps } from '~type'
 
 import './styles/index.less'
 
-const ConfigureList: React.FC<ConfigurationListProps> = props => {
+const ConfigurationList: React.FC<ConfigurationListProps> = props => {
   return (<div className='bread--configure-list'/>)
 }
 
 export {
-  ConfigureList
+  ConfigurationList
 }
 
-export default ConfigureList
+export default ConfigurationList

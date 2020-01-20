@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { ConfigureList } from '~'
+import { ConfigurationList } from '~'
 import { Configuration } from '~type'
 
 const conf: Configuration = [
@@ -13,9 +13,9 @@ const conf: Configuration = [
   }
 ]
 
-describe('Component: ConfigureList', () => {
+describe('Component: ConfigurationList', () => {
   it('should pass', () => {
-    expect(() => shallow(<ConfigureList/>))
+    expect(() => shallow(<ConfigurationList/>))
       .not
       .toThrow()
   })
