@@ -1,4 +1,5 @@
-import { writeFileSync } from 'fs'
+/* eslint-env node */
+import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
 import less from 'rollup-plugin-less'
@@ -11,7 +12,8 @@ export default {
   output: [
     {
       file: 'lib/index.js',
-      format: 'cjs'
+      format: 'cjs',
+      exports: 'named'
     },
     {
       file: 'es/index.js',
@@ -23,6 +25,7 @@ export default {
   },
   plugins: [
     resolve(),
+    commonjs(),
     less(),
     typescript({
       tsconfig: 'tsconfig.json'

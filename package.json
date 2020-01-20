@@ -22,6 +22,7 @@
     "test": "jest -i"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
     "@rollup/plugin-node-resolve": "^7.0.0",
     "@rollup/plugin-typescript": "^2.1.0",
     "@types/enzyme": "^3.10.4",
